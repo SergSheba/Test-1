@@ -2,33 +2,21 @@ package Pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.testng.Assert;
 import static com.codeborne.selenide.Selenide.$$x;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class SearchPage {
-    private final ElementsCollection articleTitle = $$x("//cite[@class='iUh30 tjvcx']");
+    private final SelenideElement articleTitle = $x("//h3[contains(.,\"Банк Открытие, тел. 8-800-444-4400: кредитование ...\")]");
 
     public SearchPage() {
-        Selenide.open();
-    }
 
-    public void checkOpen() {
-        Assert.assertEquals(articleTitle.get(0).getText(), "https://www.open.ru");
     }
 
     public void clickOpen() {
 
-        articleTitle.first().click();
-    }
-
-    /**
-     * Возвращает класс из первой ссылки.
-     *
-     * @return
-     */
-    public String searchOpen() {
-
-        return articleTitle.first().getAttribute("cite class");
+        articleTitle.click();
     }
 
 }
