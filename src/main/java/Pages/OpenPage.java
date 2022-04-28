@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class OpenPage {
     //private final SelenideElement articleTitleExchange = (SelenideElement) $$x("//div[@class='main-page-exchange main-page-info__card']");
-    private final SelenideElement articleTitleExchange = $x("//div[@class='main-page-exchange main-page-info__card']");
+    private final SelenideElement articleTitleExchange = $x("//div[@class='CurrencyExchange_currency-exchange-wrapper__K_gc4']");
     private final SelenideElement scrollPage = $("//div[@class='main-page-exchange main-page-info__card']");
     //private final Element exchangeBuyUsd = (Element) $$x("//div[@class='main-page-exchange__indicator main-page-exchange__indicator--down']");
     /*private final Element exchangeSellUsd = (Element) $$x("//div[@class='main-page-exchange__indicator']");

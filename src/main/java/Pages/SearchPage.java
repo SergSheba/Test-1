@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SearchPage {
-    private final SelenideElement articleTitle = $x("//h3[contains(.,\"Банк Открытие, тел. 8-800-444-4400: кредитование ...\")]");
+    private final SelenideElement articleTitle = $x("//h3[contains(.,\"Банк Открытие: Частным клиентам\")]");
 
     public SearchPage() {
 
